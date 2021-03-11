@@ -73,9 +73,9 @@ ENTRY
 % See econ-sample.pdf for details.
 % 
 FUNCTION {bst.use.bysame}
-% { #0 }    % Not use \bysame
+ { #0 }    % Not use \bysame 
 % { #1 }    % -> Use \bysame (default)
-  { #2 }    % -> Use \bysame of alternative style.
+% { #2 }    % -> Use \bysame of alternative style.
 
 % The definition of \bysame command.
 %
@@ -338,14 +338,14 @@ FUNCTION {bst.and.others.nameorder}
 % The string before author:
 %
 FUNCTION {bst.author.pre}
-{ "\textsc{" }
-% { "" }    % (default)
+%{ "\textsc{" }
+ { "" }    % (default)
 
 % The string after author:
 %
 FUNCTION {bst.author.post}
-{ "} " }
-% { "" }    % (default)
+%{ "} " }
+ { "" }    % (default)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %       year
@@ -353,7 +353,8 @@ FUNCTION {bst.author.post}
 % The string before year only for aritcle type entry.
 %
 FUNCTION {bst.year.pre}
-{ " (" }    % (default)
+%{ " (" }    % (default)
+{ " [" }
 
 % The string after year only for aritcle type entry.
 %
